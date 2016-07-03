@@ -86,10 +86,10 @@ data:extend(
       scale = 1.5,
       animation_speed = 0.5
     },
-    vehicle_impact_sound =  { filename = "__MiniPorts__/sound/car-metal-impact.ogg", volume = 0.65 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
-      sound = { filename = "__MiniPorts__/sound/miniropo-working.ogg", volume = 0.6 },
+      sound = { filename = "__base__/sound/roboport-working.ogg", volume = 0.6 },
       max_sounds_per_type = 3,
       audible_distance_modifier = 0.5,
       probability = 1 / (5 * 60) -- average pause between the sound is 5 seconds
@@ -97,32 +97,22 @@ data:extend(
     recharging_light = {intensity = 0.4, size = 5},
     request_to_open_door_timeout = 15,
     spawn_and_station_height = -0.1,
-    radius_visualisation_picture =
-    {
-      filename = "__MiniPorts__/graphics/entity/miniropo-radius-visualization.png",
-      width = 12,
-      height = 12,
-      priority = "extra-high-no-scale"
-    },
-    construction_radius_visualisation_picture =
-    {
-      filename = "__MiniPorts__/graphics/entity/miniropo-construction-radius-visualization.png",
-      width = 12,
-      height = 12,
-      priority = "extra-high-no-scale"
-    },
+    
+	draw_logistic_radius_visualization = true,
+	draw_construction_radius_visualization = true,
+	
     open_door_trigger_effect =
     {
       {
         type = "play-sound",
-        sound = { filename = "__MiniPorts__/sound/miniropo-door.ogg", volume = 1.2 }
+        sound = { filename = "__base__/sound/roboport-door.ogg", volume = 1.2 }
       },
     },
     close_door_trigger_effect =
     {
       {
         type = "play-sound",
-        sound = { filename = "__MiniPorts__/sound/miniropo-door.ogg", volume = 0.75 }
+        sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.75 }
       },
     },
   },
